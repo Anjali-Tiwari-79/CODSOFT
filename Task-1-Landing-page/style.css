@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background: black;
+    color: white;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 100%;
+    padding: 15px;
+    width: 40px;
+    height: 40px;
+}
+
+.logo img {
+    height: 40px;
+    width: 40px;
+}
+
+.navRight ul {
+    display: flex;
+    gap: 20px;
+}
+
+.navRight ul li {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.navRight ul li a {
+    color: black;
+    background: white;
+    text-decoration: none;
+    padding: 5px;
+    width: 100px;
+    height: 20px;
+    border-radius: 25px;
+    transition: 0.2s ease-in;
+}
+
+.navRight ul li a:hover {
+    color: white;
+    background: gray;
+}
+
+.navRight ul li:hover {
+    transform: scale(0.98);
+}
+
+section {
+    margin: 50px 0px;
+    padding: 10px 50px;
+}
+
+.home h1 {
+    margin: auto;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.home p {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.6rem;
+}
+
+.cards_sec h1 {
+    margin: auto;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.card {
+    padding: 30px 20px;
+    background: rgb(132, 195, 228);
+    height: 350px;
+    border-radius: 25px;
+    width: 300px;
+    box-shadow: -2px 2px 4px 0px black;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    transition: 0.2s ease-in;
+}
+
+.title {
+    font-size: 2rem;
+    text-align: center;
+    margin: auto;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.btn {
+    background-color: white;
+    padding: 5px;
+    font-size: 1.1rem;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    border-radius: 25px;
+    margin-top: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.card_grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.details {
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about {
+    background: rgb(132, 195, 228);
+    width: 50%;
+}
+
+.contact {
+    background: rgb(132, 195, 228);
+    width: 50%;
+}
+
+.common {
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.common h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+.common p {
+    text-align: justify;
+    font-size: 1.4rem;
+}
+
+.contact_detail {
+    margin-top: 10px;
+}
+
+footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width:1330px) {
+    .card_grid {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .card_grid {
+        justify-content: center;
+        grid-template-columns: auto auto;
+    }
+
+    .details {
+        flex-direction: column;
+    }
+
+    .about {
+        width: 100%;
+    }
+
+    .contact {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .home h1 {
+        font-size: 3rem;
+    }
+
+    .home p {
+        font-size: 1.4rem;
+    }
+
+    .card_grid {
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width:560px) {
+    nav {
+        padding: 10px;
+    }
+
+    .navRight ul li {
+        font-size: 1.2rem;
+    }
+
+    .home h1 {
+        font-size: 2.5rem;
+    }
+
+    .cards_sec h1 {
+        font-size: 2.5rem;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .logo {
+        height: 40px;
+        width: 40px;
+        padding: 20px;
+    }
+
+    .logo img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .navRight ul {
+        gap: 10px;
+    }
+
+    .navRight ul li {
+        font-size: 1rem;
+    }
+
+    .home h1 {
+        font-size: 2rem;
+    }
+
+    .cards_sec h1 {
+        font-size: 2rem;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .content p {
+        font-size: 1.1rem;
+    }
+
+    .common p {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:330px) {
+    .logo {
+        height: 30px;
+        width: 30px;
+        padding: 15px;
+    }
+
+    .logo img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .navRight ul li {
+        font-size: 0.7rem;
+    }
+
+    .home h1 {
+        font-size: 1.5rem;
+    }
+
+    .home p {
+        font-size: 1rem;
+    }
+
+    .card {
+        padding: 30px 10px;
+        width: 250px;
+    }
+
+    .common {
+        padding: 1rem;
+    }
+
+    .common p {
+        font-size: 1rem;
+    }
+}
